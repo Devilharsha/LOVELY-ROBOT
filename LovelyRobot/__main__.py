@@ -79,10 +79,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-LovelyRobot_IMG = "https://telegra.ph/file/a09bb2525c64301d31990.jpg"
+LovelyRobot_IMG = "https://telegra.ph/file/a8588988b0e91a4663e62.jpg"
 
 PM_START_TEXT = """
-[🌈](https://telegra.ph/file/469f704f4898f10f9cf3b.jpg) ' ☞ ✰Hello... Friends ─ 「[{}]」
+[🌈](https://telegra.ph/file/da648452e1f4ffc8598ff.jpg) ' ☞ ✰Hello... Friends ─ 「[{}]」
 Im Powerfull Management Bot And I Will Help In Managing Your Group.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 × *Uptime:* {}
@@ -92,8 +92,8 @@ Im Powerfull Management Bot And I Will Help In Managing Your Group.
 buttons = [
     [
                         InlineKeyboardButton(
-                            text="Add Lovely To Your Group",
-                            url="t.me/Lovely_Ro_bot?startgroup=true"),
+                            text="Add Nakiri Ayame To Your Group",
+                            url="t.me/Nakiri_Ayame_PROBOT?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
@@ -111,7 +111,7 @@ buttons = [
                      ],
                     [
                        InlineKeyboardButton(
-                          text="♻️ Source Code ♻️", url="https://github.com/Official-afk-xD/Lovely-Robot")
+                          text="Dev's chat 💖", url="https://t.me/senkudevschat")
 
                      ], 
     ]
@@ -127,7 +127,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- @Log_afk 💕"""
+ @harshahero 💕"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -248,7 +248,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⛦ Support ⛦", url="t.me/UNIQUE_SOCIETY")]]
+                [[InlineKeyboardButton(text="⛦ Support ⛦", url="https://t.me/Blaze_Support")]]
             ),
         )
 
@@ -382,13 +382,13 @@ def LovelyRobot_about_callback(update, context):
     query = update.callback_query
     if query.data == "LovelyRobot_":
         query.message.edit_text(
-            text="""➪ A ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ
-            \n➪ Here's the basic help regarding use of Lovely Robot.
             
+            text="""➪ A ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ 
+            \n➪ Here's the basic help regarding use of  Nakiri Ayame
             \n➪ Almost all modules usage defined in the help menu, checkout by sending `/help`
             \n➪ Report error/bugs click the Button""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
+            disable_web_page_preview=True, 
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -447,7 +447,7 @@ def LovelyRobot_about_callback(update, context):
     elif query.data == "LovelyRobot_admin":
         query.message.edit_text(
             text=f"*⛦➪ Let's make your group bit effective now*"
-            f"\n➪ Congragulations, ⛦ Lovely ⛦ now ready to manage your group."
+            f"\n➪ Congragulations, ⛦Nakiri Ayame⛦ now ready to manage your group."
             f"\n\n➪ *Admin Tools*"
             f"\n➪ Basic Admin tools help you to protect and powerup your group."
             f"\n➪ You can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -480,7 +480,7 @@ def LovelyRobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⛦Official AFK⛦", url="t.me/log_afk"),
+                    InlineKeyboardButton(text="⛦harshahero⛦", url="t.me/harshahero"),
                     InlineKeyboardButton(text="⛦ Chichat ⛦", url="t.me/UNIQUE_SOCIETY"),
                  ],
                  [
@@ -503,8 +503,8 @@ def LovelyRobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⛦ Harsh ", url="https://t.me/harsh_Pandit_xd"),
-                    InlineKeyboardButton(text="Evil Boy ⛦", url="https://t.me/EVIL_xd_boy"),
+                    InlineKeyboardButton(text="⛦ Harsha ", url="https://t.me/harshahero"),
+                    InlineKeyboardButton(text="blaze support ⛦", url="https://t.me/Blaze_Support"),
                  ],
                  [
                     InlineKeyboardButton(text="⛦ LOG AFK", url="https://t.me/LOG_AFK"),
@@ -521,8 +521,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""⛦➪ Hi..🙂 I'm *LovelyRobot*
-                 \n➪ Here is the [⛦ Source Code ⛦](https://github.com/Official-afk-xD/Lovely-Robot) .""",
+            text="""⛦➪ Hi..🙂 I'm *Nakiri Ayame*
+                 \n➪ Here is the [⛦ Source Code ⛦](https://t.me/Blaze_Support) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
